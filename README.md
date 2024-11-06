@@ -2,7 +2,7 @@
 
 Thank you to the following people who reviewed drafts of the initial project, providing valuable feedback to improve the quality of the project:
 
-Avichal Garg, Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Gwart, Chaitanya Jain, Shirish Jajodia, Hong Kim, David King, Jameson Lopp, Shehzan Maredia, Sanjay Mavinkurve, Murch, Matt Odell, John Pfeffer, Reardencode, Bradley Rettler, Rijndael, Pierre Rochard, AJ Towns, 0xkrane, jesmros
+Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avichal Garg, Gwart, Chaitanya Jain, Shirish Jajodia, Hong Kim, David King, Jameson Lopp, Shehzan Maredia, Sanjay Mavinkurve, Murch, Matt Odell, John Pfeffer, Reardencode, Bradley Rettler, Rijndael, Pierre Rochard, AJ Towns, 0xkrane, jesmros
 
 # Introduction
 
@@ -868,3 +868,4 @@ To a long, healthy, prosperous bitcoin!
 [^31]: The disruption does not necessarily require high transaction fee transactions, it could be done out of band with private mining mempool products
 [^32]: https://x.com/giacomozucco/status/1826219048528396784
 [^33]: https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf
+
