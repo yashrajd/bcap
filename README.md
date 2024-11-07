@@ -102,7 +102,7 @@ Risks and Considerations:
 
 Although BIP8 has never been implemented as an activation mechanism in Bitcoin Core, versions of User Activated Soft Forks (UASF) have been implemented in an alternative client such as for activation of segwit and taproot. There is substantial debate over the value of BIP8.
 
-The mirror of an User Activated Soft Fork is a User Resisted Soft Fork (URSF). In a UASF, blocks that do not signal for a soft fork are rejected, in a URSF, blocks that do signal for a soft fork are rejected. As the miner signaling threshold approaches, the URSF will reject the last block prior to the signaling threshold being hit and cause a chain split.[^4] The concept of URSF first arose surrounding discussions of BIP-119 (CTV).[^5]
+The mirror of a User Activated Soft Fork is a User Resisted Soft Fork (URSF). In a UASF, blocks that do not signal for a soft fork are rejected, in a URSF, blocks that do signal for a soft fork are rejected. As the miner signaling threshold approaches, the URSF will reject the last block prior to the signaling threshold being hit and cause a chain split.[^4] The concept of URSF first arose surrounding discussions of BIP-119 (CTV).[^5]
 
 # What maintains Bitcoin Consensus
 
