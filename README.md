@@ -22,9 +22,9 @@ Bitcoin consensus refers to the set of rules that define the validity of transac
 
 Important aspects of bitcoin’s technical consensus include:
 
-1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof of work requirements.
+1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof-of-work requirements.
 2. Transaction Validation: How transactions should be structured and what makes them valid, including rules about inputs and outputs, signatures, and script execution.
-3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof of work.
+3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof-of-work.
 
 Understanding the technical aspects of consensus is important because any changes to the client software that change these technical aspects of consensus result in either a soft fork or hard fork (described in greater depth below) and the nodes on the network may be required to upgrade and adopt newer versions of the client. For example, new opcodes introduced require a soft fork or hard fork because they affect script execution, making scripts that completed successfully before the fork now terminate in failure (in the case of a soft fork), or vice versa (in the case of a hard fork).
 
