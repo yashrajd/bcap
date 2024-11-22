@@ -22,9 +22,9 @@ Bitcoin consensus refers to the set of rules that define the validity of transac
 
 Important aspects of bitcoin’s technical consensus include:
 
-1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof of work requirements
-2. Transaction Validation: How transactions should be structured and what makes them valid, including rules about inputs and outputs, signatures, and script execution
-3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof of work
+1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof of work requirements.
+2. Transaction Validation: How transactions should be structured and what makes them valid, including rules about inputs and outputs, signatures, and script execution.
+3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof of work.
 
 Understanding the technical aspects of consensus is important because any changes to the client software that change these technical aspects of consensus result in either a soft fork or hard fork (described in greater depth below) and the nodes on the network may be required to upgrade and adopt newer versions of the client. For example, new opcodes introduced require a soft fork or hard fork because they affect script execution, making scripts that completed successfully before the fork now terminate in failure (in the case of a soft fork), or vice versa (in the case of a hard fork).
 
@@ -70,7 +70,7 @@ Segwit (BIP141, BIP143, BIP147) was also activated successfully with version bit
 
 Advantages:
 
-- Flexibility: Can handle multiple upgrades simultaneously
+- Flexibility: Can handle multiple upgrades simultaneously.
 - Miner coordination: Allows Miners to signal readiness.
 - Grace period: Provides time for the network to prepare after the signaling threshold is met.
 - Speed: Allows for faster deployments, a principled approach to a flag day would require the flag day to be set much longer in the future to minimize disruption.
@@ -139,17 +139,17 @@ They include:
 
 Powers:
 
-- Ability to define which fork is bitcoin by choosing which version of the software to run and set ticker symbols
-- Reject blocks they consider invalid, potentially causing chain splits
-- Ability to list or not list markets for spot and derivative markets for forks
-- Ability to sell fork coins on behalf of users without their permission
+- Ability to define which fork is bitcoin by choosing which version of the software to run and set ticker symbols.
+- Reject blocks they consider invalid, potentially causing chain splits.
+- Ability to list or not list markets for spot and derivative markets for forks.
+- Ability to sell fork coins on behalf of users without their permission.
 
 Incentives:
 
-- Maximize transaction volume and trading activity
-- Maintain the security and stability of the network
-- Comply with regulatory requirements in their jurisdictions
-- May have equity investments in bitcoin businesses
+- Maximize transaction volume and trading activity.
+- Maintain the security and stability of the network.
+- Comply with regulatory requirements in their jurisdictions.
+- May have equity investments in bitcoin businesses.
 
 ### Investors
 
@@ -163,16 +163,16 @@ They include:
 
 Powers:
 
-- Influence market prices through buying and selling activity
-- Signal preferences for different proposals through futures markets (which could in turn affect choices of Economic Nodes)
-- Fund development efforts or advocacy for specific changes
+- Influence market prices through buying and selling activity.
+- Signal preferences for different proposals through futures markets (which could in turn affect choices of Economic Nodes).
+- Fund development efforts or advocacy for specific changes.
 
 Incentives:
 
-- Maximize the value of their bitcoin holdings
-- Maintain or improve bitcoin's properties as a store of value
-- Minimize risks of network instability or contentious changes
-- Comply with regulatory requirements in their jurisdictions
+- Maximize the value of their bitcoin holdings.
+- Maintain or improve bitcoin's properties as a store of value.
+- Minimize risks of network instability or contentious changes.
+- Comply with regulatory requirements in their jurisdictions.
 
 Investor groups differ in their agility and capacity to influence consensus changes, largely due to variations in their legal frameworks and custodial setups. These differences make it important to distinguish between several key investor categories.
 
@@ -277,7 +277,7 @@ They include:
 
 Powers:
 
-- Often provide the default node connection for users sending and receiving bitcoin transactions
+- Often provide the default node connection for users sending and receiving bitcoin transactions.
 - Sell or threaten to sell one side of a hard fork dispute, but with less scale and impact than Investors.
 - Sell or threaten to sell bitcoin and use other cryptocurrencies that meet their needs.
 - The amount of fees driven by the application is directly proportional to their power.
@@ -297,7 +297,7 @@ The above causes a difference in the incentives of these two segments of applica
 Medium of Exchange Users and Application Developers Incentives:
 
 - Benefits from lower fees: Payments with bitcoin compete with other payment rails on fees.
-- Benefits from either larger block sizes or efficient transaction layers that keep fees low or sidestep fees
+- Benefits from either larger block sizes or efficient transaction layers that keep fees low or sidestep fees.
 - Benefits from greater privacy options: Competing payment rails are private, there are merchants and users who might also want privacy for payments on bitcoin.
 
 Utility Users and Application Developers Incentives:
@@ -390,7 +390,7 @@ Measuring consensus in bitcoin requires combining quantitative metrics and quali
 
 Future improvements in measurement might include:
 
-- Transparency from Economic Nodes on their client versions: This could involve voluntary reporting mechanisms or public statements from the Economic Nodes
+- Transparency from Economic Nodes on their client versions: This could involve voluntary reporting mechanisms or public statements from the Economic Nodes.
 - Development of prediction markets for bitcoin protocol changes: These markets could provide financial incentives for accurate forecasting of consensus outcomes, potentially offering valuable signals about stakeholder sentiment.
 - Implementation of anonymous cryptographic attestation mechanisms: This could allow stakeholders to prove their status (e.g., as a large holder or a frequent transactor) without revealing their identity, enabling more representative polling of different user groups.
 - Aggregation websites that summarize support or lack of support: Sourcing stakeholder stances from the ecosystem on aggregation websites and sharing these websites with all stakeholders. For example during the segwit upgrade, websites like bitcoin.it wiki tracked the stance of different stakeholders.[^24]
@@ -467,7 +467,7 @@ A chain split typically starts when there is a significant disagreement among st
 
 At a certain block, the blockchain splits into two. Each new chain records blocks independently, and at some point the two chains diverge in their history. Every bitcoin holder at the time of the split effectively owns coins on both chains. These coins are equivalent in number, but now exist in two separate blockchains. After the split, Miners and Economic Nodes must decide which protocol to run, and Users and Investors must decide which coin to use.
 
-- Legacy Chain: Continues following the original bitcoin consensus rules
+- Legacy Chain: Continues following the original bitcoin consensus rules.
 - Newly Proposed Rules Chain: Follows the new consensus rules implemented by the opposing group (e.g., Bitcoin Cash after the fork).
 
 **Coin ownership**
