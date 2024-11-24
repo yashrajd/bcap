@@ -477,7 +477,7 @@ When the blockchain splits, anyone holding bitcoin before the fork ends up with 
 - Asset Duplication: You technically receive coins on both chains, but the value of each coin can vary dramatically.
 - Market Value Divergence: The market quickly determines the value of the new coins relative to bitcoin based on perceived utility, adoption, and ideological alignment.
 
-**Market response **
+**Market response**
 
 After a split, Economic Nodes such as exchanges play a critical role in defining the fate of both chains. They may list the new coin under a different symbol (e.g., BCH for Bitcoin Cash), allowing it to be traded independently. The value of the new coin can fluctuate wildly based on market perception and acceptance.
 
