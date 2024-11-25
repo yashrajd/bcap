@@ -200,12 +200,15 @@ They include:
 - Media and press organizations
 - Thought leaders with large followings on social media platforms
 - Organizers of conferences related to bitcoin
+- Platform moderators
+- Bot farms
 
 Powers:
 
 - Shape narratives around bitcoin and proposed changes.
 - Distort the perceived support level of a consensus change (either aggrandizing or minimizing) relative to reality.
 - Amplify or critique various stakeholder positions.
+- Censor various stakeholder positions on centralized platforms.
 - Educate the broader public about bitcoin developments.
 
 Incentives:
