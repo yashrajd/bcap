@@ -200,12 +200,15 @@ They include:
 - Media and press organizations
 - Thought leaders with large followings on social media platforms
 - Organizers of conferences related to bitcoin
+- Platform moderators
+- Bot farms
 
 Powers:
 
 - Shape narratives around bitcoin and proposed changes.
 - Distort the perceived support level of a consensus change (either aggrandizing or minimizing) relative to reality.
 - Amplify or critique various stakeholder positions.
+- Censor various stakeholder positions on centralized platforms.
 - Educate the broader public about bitcoin developments.
 
 Incentives:
@@ -455,7 +458,7 @@ Anyone can write an alternative client that is a fork of Bitcoin Core or written
 
 In the scenario that an Alternative Consensus Client does reach a high miner signaling threshold of 90-95%, then we have to consider whether the Economic Nodes such as exchanges will also adopt the client. In the case where a low to medium percentage of Economic Nodes adopt the Alternative Consensus Client, users become open to chain split risk.
 
-### What is a chain split
+### What is a chain split?
 
 A chain split in bitcoin refers to the scenario where the blockchain forks into two chains, creating two coins. This typically occurs when there is a disagreement amongst stakeholders about changes to consensus or the rules of the network (irrespective of whether those changes to consensus occurred with a new version of Bitcoin Core, that is widely adopted, or Alternative Consensus Client, that is being widely adopted). At a specific block height, the blockchain splits into separate networks that build blocks according to different consensus rules or use the same rules, but disagree on the history of the longest blocks. The two chains continue independently, potentially with different features, rules, and upgrades.
 
@@ -477,7 +480,7 @@ When the blockchain splits, anyone holding bitcoin before the fork ends up with 
 - Asset Duplication: You technically receive coins on both chains, but the value of each coin can vary dramatically.
 - Market Value Divergence: The market quickly determines the value of the new coins relative to bitcoin based on perceived utility, adoption, and ideological alignment.
 
-**Market response **
+**Market response**
 
 After a split, Economic Nodes such as exchanges play a critical role in defining the fate of both chains. They may list the new coin under a different symbol (e.g., BCH for Bitcoin Cash), allowing it to be traded independently. The value of the new coin can fluctuate wildly based on market perception and acceptance.
 
@@ -508,7 +511,7 @@ For users, a chain split means having to decide which version of bitcoin they pr
 
 #### How might this occur with a soft fork
 
-While a hard fork by definition results in a chain split, a soft fork does not always result in a chain split, but that does not mean it is not possible. chain split risk is elevated when the chain of upgraded blocks from a soft fork is disrupted by a sequence of high fee transactions that adds one or more not upgraded blocks subsequently. Transactions that violate the new rules that have high transaction fees could cause Miners to switch from the Alternative Consensus Client back to the unupgraded client or Miners on unupgraded clients to mine them. The sender of these soft fork undermining transactions does not need to be of any particular significance because there is little cost or downside to doing so for the sender. If Miners mine the transaction and see subsequent high transaction fee unupgraded transactions, they could build upon the unupgraded blocks which would disrupt the soft fork.[^29] Miners can in theory also build on unupgraded blocks with the upgraded soft fork blocks.
+While a hard fork by definition results in a chain split, a soft fork does not always result in a chain split, but that does not mean it is not possible. Chain split risk is elevated when the chain of upgraded blocks from a soft fork is disrupted by a sequence of high fee transactions that adds one or more not upgraded blocks subsequently. Transactions that violate the new rules that have high transaction fees could cause Miners to switch from the Alternative Consensus Client back to the unupgraded client or Miners on unupgraded clients to mine them. The sender of these soft fork undermining transactions does not need to be of any particular significance because there is little cost or downside to doing so for the sender. If Miners mine the transaction and see subsequent high transaction fee unupgraded transactions, they could build upon the unupgraded blocks which would disrupt the soft fork.[^29] Miners can in theory also build on unupgraded blocks with the upgraded soft fork blocks.
 
 It is important for there to be very clear consensus by bitcoin stakeholders including Economic Nodes before miners signal readiness, upgrade and begin producing blocks. Economic Nodes validate and propagate transactions across the network. The default behavior of Economic Nodes is not to reject new rules from a soft fork (by definition). However, for a consensus change to be successful and avoid risks such as bounty claims (described below) and chain splits, an overwhelming majority of Economic Nodes must upgrade and enforce the change.
 
