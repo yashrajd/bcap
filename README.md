@@ -225,9 +225,9 @@ Miners are individuals or organizations that use specialized hardware to find a 
 They include:
 
 - Individual Miners
-- Large scale mining operations
-- Mining pools
-- Chip manufacturers
+- Large Scale Mining Operations
+- Mining Pools
+- Chip Manufacturers
 
 Powers:
 
@@ -245,7 +245,7 @@ The current segmentation of Miners power is detailed below
 | Individual Miners                     | Possible, if solo mining                    | Possible, if solo mining                                       | Possible, if solo mining | Yes                                  |
 | Large Scale Miners                    | No                                          | No                                                             | No                       | Yes                                  |
 | Mining Pools                          | Yes                                         | Yes                                                            | Yes                      | No                                   |
-| Chip manufacturers                    | No                                          | No                                                             | No                       | No                                   |
+| Chip Manufacturers                    | No                                          | No                                                             | No                       | No                                   |
 
 In the future, we may see a shift toward Miners running bitcoin software and directly controlling transaction selection and choosing consensus rules with protocols such as Stratum v2 and Braidpool.[^10] [^11]
 
