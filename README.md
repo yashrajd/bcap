@@ -22,9 +22,9 @@ Bitcoin consensus refers to the set of rules that define the validity of transac
 
 Important aspects of bitcoin’s technical consensus include:
 
-1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof of work requirements
-2. Transaction Validation: How transactions should be structured and what makes them valid, including rules about inputs and outputs, signatures, and script execution
-3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof of work
+1. Block Validation: Define what constitutes a valid block, including aspects like block size, block header, transaction structure, and proof-of-work requirements.
+2. Transaction Validation: How transactions should be structured and what makes them valid, including rules about inputs and outputs, signatures, and script execution.
+3. Chain Selection: Determine which chain is considered the canonical bitcoin blockchain in case of forks, typically based on the valid chain with the most accumulated proof-of-work.
 
 Understanding the technical aspects of consensus is important because any changes to the client software that change these technical aspects of consensus result in either a soft fork or hard fork (described in greater depth below) and the nodes on the network may be required to upgrade and adopt newer versions of the client. For example, new opcodes introduced require a soft fork or hard fork because they affect script execution, making scripts that completed successfully before the fork now terminate in failure (in the case of a soft fork), or vice versa (in the case of a hard fork).
 
@@ -32,7 +32,7 @@ Understanding the technical aspects of consensus is important because any change
 
 ### Soft Forks vs Hard Forks
 
-Soft forks and hard forks are two types of protocol changes in blockchain networks like bitcoin. Soft forks are backwards-compatible upgrades where old nodes still see new blocks as valid, though they may miss out on new features. They only tighten or add rules to the existing protocol and can be activated with consensus from the network. Furthermore, for soft forks, only the nodes that want to use the newly proposed rules have to upgrade. Soft forks are generally preferred in bitcoin due to being a more pragmatic coordination solution as the window of time for Economic Nodes to upgrade can be quite lengthy. Examples include segwit and P2SH. However, they can create two classes of nodes, upgraded and non upgraded nodes. The median time for a bitcoin node to upgrade has historically been ~40 weeks but that has been trending even longer in recent years.
+Soft forks and hard forks are two types of protocol changes in blockchain networks like bitcoin. Soft forks are backwards-compatible upgrades where old nodes still see new blocks as valid, though they may miss out on new features. They only tighten or add rules to the existing protocol and can be activated with consensus from the network. Furthermore, for soft forks, only the nodes that want to use the newly proposed rules have to upgrade. Soft forks are generally preferred in bitcoin due to being a more pragmatic coordination solution as the window of time for Economic Nodes to upgrade can be quite lengthy. Examples include segwit and P2SH. However, they can create two classes of nodes, upgraded and non-upgraded nodes. The median time for a bitcoin node to upgrade has historically been ~40 weeks, but that has been trending even longer in recent years.
 
 ![bitcoin_core_upgrade_time](/img/bitcoin_core_upgrade_time.png) [^1]
 
@@ -70,7 +70,7 @@ Segwit (BIP141, BIP143, BIP147) was also activated successfully with version bit
 
 Advantages:
 
-- Flexibility: Can handle multiple upgrades simultaneously
+- Flexibility: Can handle multiple upgrades simultaneously.
 - Miner coordination: Allows Miners to signal readiness.
 - Grace period: Provides time for the network to prepare after the signaling threshold is met.
 - Speed: Allows for faster deployments, a principled approach to a flag day would require the flag day to be set much longer in the future to minimize disruption.
@@ -106,7 +106,7 @@ The mirror of a User Activated Soft Fork is a User Resisted Soft Fork (URSF). In
 
 # What maintains Bitcoin Consensus
 
-In bitcoin, each major stakeholder group possesses certain powers and is driven by a set of incentives that shape how they are likely to wield those powers. Entities may belong to multiple stakeholder groups, leading them to exercise various powers and navigate a mix of potentially competing incentives. For instance, a wealthy investor might also be a large influencer, or a business could operate an Economic Node, engage in mining, employ Protocol Developers, and have media influence. Additionally, entities can sometimes act against their typical group incentives for ideological or other reasons, meaning incentive descriptions apply to the average group but allow for individual variance. When assessing whether groups should be classified together or separately in terms of their impact on consensus, it is important to consider whether their incentives and powers are meaningfully similar. If both aspects align, they can be treated as the same group for consensus purposes; if they differ, they should be regarded as distinct.
+In bitcoin, each major stakeholder group possesses certain powers and is driven by a set of incentives that shape how they are likely to wield those powers. Entities may belong to multiple stakeholder groups, leading them to exercise various powers and navigate a mix of potentially competing incentives. For instance, a wealthy investor might also be a large influencer, or a business could operate an Economic Node, engage in mining, employ Protocol Developers, and have media influence. Additionally, entities can sometimes act against their typical group incentives for ideological or other reasons, meaning incentive descriptions apply to the average group, but allow for individual variance. When assessing whether groups should be classified together or separately in terms of their impact on consensus, it is important to consider whether their incentives and powers are meaningfully similar. If both aspects align, they can be treated as the same group for consensus purposes; if they differ, they should be regarded as distinct.
 
 ## State of Mind
 
@@ -116,7 +116,7 @@ There are different states of minds (SOM) the different stakeholders might be in
 2. SOM2: Supportive of a change
 3. SOM3: Apathetic or undecided
 4. SOM4: Unaware
-5. SOM5: Not supportive but not to a degree to spend time, money, resources toward fighting it
+5. SOM5: Not supportive, but not to a degree to spend time, money, resources toward fighting it
 6. SOM6: Passionately against a change and willing to expend resources and exercise power to fight it
 
 Most of the time, the majority of stakeholders are likely apathetic or unaware of changes unless they are actively contributing to protocol code or building a product that is dependent on a consensus change. It is therefore important in consensus changes for all stakeholders to form an opinion ahead of the actual consensus change, moving away from apathetic and unaware (SOM3, SOM4) to either being supportive or not supportive of a change (SOM1, SOM2, SOM5, SOM6). It is only when stakeholders are engaged that it is possible to reach consensus without whiplash that might result from regret of not participating. If stakeholders remain apathetic or unaware of changes, the risk is that new precedents may be set without their input or their apathy delays the consensus process. Future changes might then build on these precedents, and by the time stakeholders re-engage, they could find that bitcoin has evolved into something very different from what they initially supported.
@@ -125,7 +125,7 @@ Most of the time, the majority of stakeholders are likely apathetic or unaware o
 
 ### Economic Nodes
 
-Economic Nodes play a critical role in bitcoin's consensus mechanism. Economic Nodes are full nodes that not only validate and relay transactions but also receive and send substantial amounts of bitcoin payments. These nodes are distinct from nodes just validating blocks and transactions. These Economic Nodes are typically operated by businesses and institutions that handle significant volumes of bitcoin transactions and often serve as bridges between the bitcoin network and the traditional financial system (providing a venue to swap BTC for fiat currencies or other cryptocurrencies).
+Economic Nodes play a critical role in bitcoin's consensus mechanism. Economic Nodes are full nodes that not only validate and relay transactions, but also receive and send substantial amounts of bitcoin payments. These nodes are distinct from nodes just validating blocks and transactions. These Economic Nodes are typically operated by businesses and institutions that handle significant volumes of bitcoin transactions and often serve as bridges between the bitcoin network and the traditional financial system (providing a venue to swap BTC for fiat currencies or other cryptocurrencies).
 
 Economic Nodes, or nodes that regularly receive bitcoin, have power and influence which is proportional to the frequency and volume of payments received. For example, a high volume exchange has power in that if their nodes reject blocks mined by Miners, it would devalue the chain that Miners are building upon.
 
@@ -139,21 +139,21 @@ They include:
 
 Powers:
 
-- Ability to define which fork is bitcoin by choosing which version of the software to run and set ticker symbols
-- Reject blocks they consider invalid, potentially causing chain splits
-- Ability to list or not list markets for spot and derivative markets for forks
-- Ability to sell fork coins on behalf of users without their permission
+- Ability to define which fork is bitcoin by choosing which version of the software to run and set ticker symbols.
+- Reject blocks they consider invalid, potentially causing chain splits.
+- Ability to list or not list markets for spot and derivative markets for forks.
+- Ability to sell fork coins on behalf of users without their permission.
 
 Incentives:
 
-- Maximize transaction volume and trading activity
-- Maintain the security and stability of the network
-- Comply with regulatory requirements in their jurisdictions
-- May have equity investments in bitcoin businesses
+- Maximize transaction volume and trading activity.
+- Maintain the security and stability of the network.
+- Comply with regulatory requirements in their jurisdictions.
+- May have equity investments in bitcoin businesses.
 
 ### Investors
 
-Although Investors do not tend to play a role in the day to day operations of bitcoin, they impact the price of bitcoin by buying or selling. Investors tend to have a thesis for why they hold bitcoin, thus changes in bitcoin consensus that affect their thesis can positively or negatively affect the price of bitcoin and consequently the incentives to Miners for the amount of hashrate security the network has. However, bitcoin's price also has broader implications beyond mining. It can drive venture capital funding for new businesses, affect funding for open-source developers working on software related to bitcoin, and stimulate overall investment, leading to innovation in products and services. Thus, the price of bitcoin not only influences network security but also shapes the development and expansion of the entire ecosystem.
+Although Investors do not tend to play a role in the day to day operations of bitcoin, they impact the price of bitcoin by buying or selling. Investors tend to have a thesis for why they hold bitcoin, thus changes in bitcoin consensus that affect their thesis can positively or negatively affect the price of bitcoin and consequently the incentives to Miners for the amount of hashrate security the network has. However, bitcoin's price also has broader implications beyond mining. It can drive venture capital funding for new businesses, affect funding for open-source developers working on software related to bitcoin, and stimulate overall investment, leading to innovation in products and services. Thus, the price of bitcoin not only influences network security, but also shapes the development and expansion of the entire ecosystem.
 
 They include:
 
@@ -163,16 +163,16 @@ They include:
 
 Powers:
 
-- Influence market prices through buying and selling activity
-- Signal preferences for different proposals through futures markets (which could in turn affect choices of Economic Nodes)
-- Fund development efforts or advocacy for specific changes
+- Influence market prices through buying and selling activity.
+- Signal preferences for different proposals through futures markets (which could in turn affect choices of Economic Nodes).
+- Fund development efforts or advocacy for specific changes.
 
 Incentives:
 
-- Maximize the value of their bitcoin holdings
-- Maintain or improve bitcoin's properties as a store of value
-- Minimize risks of network instability or contentious changes
-- Comply with regulatory requirements in their jurisdictions
+- Maximize the value of their bitcoin holdings.
+- Maintain or improve bitcoin's properties as a store of value.
+- Minimize risks of network instability or contentious changes.
+- Comply with regulatory requirements in their jurisdictions.
 
 Investor groups differ in their agility and capacity to influence consensus changes, largely due to variations in their legal frameworks and custodial setups. These differences make it important to distinguish between several key investor categories.
 
@@ -220,7 +220,7 @@ Incentives:
 
 ### Miners
 
-Miners are individuals or organizations that use specialized hardware to find a block template and nonce that in combination produce a hash that is less than or equal to the network’s difficulty target. Miners also historically have signaled readiness for consensus upgrades that help other stakeholders determine that it is safer for users to use new upgrades but does not provide a guarantee because the signaling can be spoofed.
+Miners are individuals or organizations that use specialized hardware to find a block template and nonce that in combination produce a hash that is less than or equal to the network’s difficulty target. Miners also historically have signaled readiness for consensus upgrades that help other stakeholders determine that it is safer for users to use new upgrades, but does not provide a guarantee because the signaling can be spoofed.
 
 They include:
 
@@ -291,7 +291,7 @@ They include:
 
 Powers:
 
-- Often provide the default node connection for users sending and receiving bitcoin transactions
+- Often provide the default node connection for users sending and receiving bitcoin transactions.
 - Sell or threaten to sell one side of a hard fork dispute, but with less scale and impact than Investors.
 - Sell or threaten to sell bitcoin and use other cryptocurrencies that meet their needs.
 - The amount of fees driven by the application is directly proportional to their power.
@@ -311,7 +311,7 @@ The above causes a difference in the incentives of these two segments of applica
 Medium of Exchange Users and Application Developers Incentives:
 
 - Benefits from lower fees: Payments with bitcoin compete with other payment rails on fees.
-- Benefits from either larger block sizes or efficient transaction layers that keep fees low or sidestep fees
+- Benefits from either larger block sizes or efficient transaction layers that keep fees low or sidestep fees.
 - Benefits from greater privacy options: Competing payment rails are private, there are merchants and users who might also want privacy for payments on bitcoin.
 
 Utility Users and Application Developers Incentives:
@@ -324,7 +324,7 @@ Utility Users and Application Developers Incentives:
 
 ## How is Consensus Change attained
 
-Bitcoin consensus change is not achieved through formal governance but through a complex interplay of actions and reactions among stakeholders, each with their unique powers and incentives. The process is iterative, with various stakeholders taking turns to act and respond until consensus is reached. Historical upgrades, such as segwit, illustrate this repeated game theory dynamic, where stakeholders must continuously adjust their strategies and actions based on the actions of others. The process iterates to a point where everyone is sufficiently satisfied with the chosen upgrades such that they no longer have reasonable objections.
+Bitcoin consensus change is not achieved through formal governance, but through a complex interplay of actions and reactions among stakeholders, each with their unique powers and incentives. The process is iterative, with various stakeholders taking turns to act and respond until consensus is reached. Historical upgrades, such as segwit, illustrate this repeated game theory dynamic, where stakeholders must continuously adjust their strategies and actions based on the actions of others. The process iterates to a point where everyone is sufficiently satisfied with the chosen upgrades such that they no longer have reasonable objections.
 
 ### Segwit
 
@@ -348,13 +348,13 @@ The segwit activation demonstrates how bitcoin consensus is achieved not through
 
 **Timeline**
 
-The process of reaching consensus for segwit might have started with some stakeholders apathetic or unaware (SOM3, SOM4) but the back and forth of actions and reactions among stakeholders provided enough public opportunities and discourse that stakeholders moved to either supporting (SOM1, SOM2) or against (SOM5, SOM6).
+The process of reaching consensus for segwit might have started with some stakeholders apathetic or unaware (SOM3, SOM4), but the back and forth of actions and reactions among stakeholders provided enough public opportunities and discourse that stakeholders moved to either supporting (SOM1, SOM2) or against (SOM5, SOM6).
 
 ![segwit_heatmap](img/segwit_heatmap.png)
 
 ## Stakeholder powers during a consensus change
 
-Stakeholders have varying degrees of relative powers during the course of a consensus change based on their attributes. Some stakeholders' influence is limited in the early part of the consensus-building process but grows over time; the opposite is true for other stakeholder groups. We have tried to qualitatively capture the time-dependent variance in the unique influence of each stakeholder group at a high level in the following graphic.
+Stakeholders have varying degrees of relative powers during the course of a consensus change based on their attributes. Some stakeholders' influence is limited in the early part of the consensus-building process, but grows over time; the opposite is true for other stakeholder groups. We have tried to qualitatively capture the time-dependent variance in the unique influence of each stakeholder group at a high level in the following graphic.
 
 ![powers_over_time](img/powers_over_time.png)
 
@@ -398,20 +398,20 @@ Measuring consensus in bitcoin is a complex task due to the decentralized nature
 
 Another way of measuring consensus is looking for the absence of press statements, social media announcements, or discourse from stakeholders. If certain stakeholder groups are not participating in public discourse, that suggests they are apathetic or unaware (SOM3, SOM4). It is also possible in rare cases that the stakeholder is not participating in an attempt to preserve trade secrets. Explaining how a consensus change could affect them might reveal the trade secret. To allow for consensus to occur, it would be beneficial for stakeholders who are advocating for the consensus change (SOM1, SOM2) or opposing the consensus change (SOM5, SOM6) to reach out to silent stakeholders to gauge their state of mind and try to engage them in the consensus change discourse.
 
-Consensus requires an absence of sustained opposition, thus it is important to evaluate whether stakeholders have had adequate opportunities to express their concerns or objections. Stakeholders typically look for public discussions, developer meetings, social media announcements, press statements, and forums (such as GitHub or mailing lists) to assess if any strong opposition has been raised. A sufficient notice period for feedback is crucial to ensure that all stakeholders, especially those who may be slower to react, have the opportunity to voice concerns. This notice period should encompass not only the technical aspects but also the social, economic, and practical implications of any proposed change. If no significant, sustained opposition has emerged during this period, it may indicate either broad agreement or a lack of engagement, both of which need to be interpreted cautiously. We have included some resources on areas to look at the end of this paper under Recommendations.
+Consensus requires an absence of sustained opposition, thus it is important to evaluate whether stakeholders have had adequate opportunities to express their concerns or objections. Stakeholders typically look for public discussions, developer meetings, social media announcements, press statements, and forums (such as GitHub or mailing lists) to assess if any strong opposition has been raised. A sufficient notice period for feedback is crucial to ensure that all stakeholders, especially those who may be slower to react, have the opportunity to voice concerns. This notice period should encompass not only the technical aspects, but also the social, economic, and practical implications of any proposed change. If no significant, sustained opposition has emerged during this period, it may indicate either broad agreement or a lack of engagement, both of which need to be interpreted cautiously. We have included some resources on areas to look at the end of this paper under Recommendations.
 
 Measuring consensus in bitcoin requires combining quantitative metrics and qualitative analysis across the stakeholder groups. Each metric comes with its own set of limitations and potential biases. The benefit of not having a single metric of consensus is that it is harder to game or optimize for. The cost of not having a single metric of consensus is that consensus of the network requires a longer time period for each stakeholder to have an opportunity to signal their preferences.
 
 Future improvements in measurement might include:
 
-- Transparency from Economic Nodes on their client versions: This could involve voluntary reporting mechanisms or public statements from the Economic Nodes
+- Transparency from Economic Nodes on their client versions: This could involve voluntary reporting mechanisms or public statements from the Economic Nodes.
 - Development of prediction markets for bitcoin protocol changes: These markets could provide financial incentives for accurate forecasting of consensus outcomes, potentially offering valuable signals about stakeholder sentiment.
 - Implementation of anonymous cryptographic attestation mechanisms: This could allow stakeholders to prove their status (e.g., as a large holder or a frequent transactor) without revealing their identity, enabling more representative polling of different user groups.
 - Aggregation websites that summarize support or lack of support: Sourcing stakeholder stances from the ecosystem on aggregation websites and sharing these websites with all stakeholders. For example during the segwit upgrade, websites like bitcoin.it wiki tracked the stance of different stakeholders.[^26]
 
 ## Future Scenarios and Considerations
 
-Bitcoin’s consensus changes have historically progressed smoothly and without significant issues. Nevertheless, it’s important to deeply examine and anticipate future scenarios that might be more divisive and could weaken the network’s stability. There are many future scenarios worth considering and analysis that we anticipate will become part of this project. We are starting with one scenario but we anticipate more to be added over time.
+Bitcoin’s consensus changes have historically progressed smoothly and without significant issues. Nevertheless, it’s important to deeply examine and anticipate future scenarios that might be more divisive and could weaken the network’s stability. There are many future scenarios worth considering and analysis that we anticipate will become part of this project. We are starting with one scenario, but we anticipate more to be added over time.
 
 ### Consensus changes with alternative clients
 
@@ -467,9 +467,9 @@ Anyone can write an alternative client that is a fork of Bitcoin Core or written
 
 In the scenario that an Alternative Consensus Client does reach a high miner signaling threshold of 90-95%, then we have to consider whether the Economic Nodes such as exchanges will also adopt the client. In the case where a low to medium percentage of Economic Nodes adopt the Alternative Consensus Client, users become open to chain split risk.
 
-### What is a chain split
+### What is a chain split?
 
-A chain split in bitcoin refers to the scenario where the blockchain forks into two chains, creating two coins. This typically occurs when there is a disagreement amongst stakeholders about changes to consensus or the rules of the network (irrespective of whether those changes to consensus occurred with a new version of Bitcoin Core, that is widely adopted, or Alternative Consensus Client, that is being widely adopted). At a specific block height, the blockchain splits into separate networks that build blocks according to different consensus rules or use the same rules but disagree on the history of the longest blocks. The two chains continue independently, potentially with different features, rules, and upgrades.
+A chain split in bitcoin refers to the scenario where the blockchain forks into two chains, creating two coins. This typically occurs when there is a disagreement amongst stakeholders about changes to consensus or the rules of the network (irrespective of whether those changes to consensus occurred with a new version of Bitcoin Core, that is widely adopted, or Alternative Consensus Client, that is being widely adopted). At a specific block height, the blockchain splits into separate networks that build blocks according to different consensus rules or use the same rules, but disagree on the history of the longest blocks. The two chains continue independently, potentially with different features, rules, and upgrades.
 
 **Initiation of the split**
 
@@ -477,9 +477,9 @@ A chain split typically starts when there is a significant disagreement among st
 
 **Forking of the blockchain**
 
-At a certain block, the blockchain splits into two. Each new chain records blocks independently, and at some point the two chains diverge in their history. Every bitcoin holder at the time of the split effectively owns coins on both chains. These coins are equivalent in number but now exist in two separate blockchains. After the split, Miners and Economic Nodes must decide which protocol to run, and Users and Investors must decide which coin to use.
+At a certain block, the blockchain splits into two. Each new chain records blocks independently, and at some point the two chains diverge in their history. Every bitcoin holder at the time of the split effectively owns coins on both chains. These coins are equivalent in number, but now exist in two separate blockchains. After the split, Miners and Economic Nodes must decide which protocol to run, and Users and Investors must decide which coin to use.
 
-- Legacy Chain: Continues following the original bitcoin consensus rules
+- Legacy Chain: Continues following the original bitcoin consensus rules.
 - Newly Proposed Rules Chain: Follows the new consensus rules implemented by the opposing group (e.g., Bitcoin Cash after the fork).
 
 **Coin ownership**
@@ -697,7 +697,7 @@ Medium bounty:
 
 - Moderate risk of chain split.
 - May attract opportunistic or smaller mining operations.
-- Could lead to temporary disruptions but unlikely to cause long-term damage, but could disproportionately hurt high numbers of users with low values of funds per user.
+- Could lead to temporary disruptions, but unlikely to cause long-term damage, but could disproportionately hurt high numbers of users with low values of funds per user.
 
 Large bounty:
 
@@ -731,7 +731,7 @@ We can also break down the speed, likelihood, and magnitude of impact of the dif
 
 Self-custodying, proprietary owners of BTC will be the fastest to act as a group. They probably strongly agree or disagree with the consensus change because they self-custody their bitcoin, suggesting they follow discourse in bitcoin. They, in aggregate, hold large amounts of bitcoin, and can quickly transfer either coin to exchanges to sell in order to reinvest the proceeds in the other.
 
-Institutional Investors often hold bitcoin in addition to other cryptocurrencies. They likely are apathetic and unaware of the details of consensus changes but some may track the developments modestly. If they do not have a strong opinion either way, it will take them a few days to 2 weeks to wrap their head around the case for both coins and act. They in aggregate hold large amounts of bitcoin and can transfer either coin to exchanges to participate in price discovery.
+Institutional Investors often hold bitcoin in addition to other cryptocurrencies. They likely are apathetic and unaware of the details of consensus changes, but some may track the developments modestly. If they do not have a strong opinion either way, it will take them a few days to 2 weeks to wrap their head around the case for both coins and act. They in aggregate hold large amounts of bitcoin and can transfer either coin to exchanges to participate in price discovery.
 
 Corporations holding bitcoin on their balance sheets either view it as a treasury asset and do not spend a lot of time following developments on bitcoin, or spend a lot of time studying developments on bitcoin. They will likely be slow to act if at all, and in aggregate (with the exception of a few firms) hold very little bitcoin; so, their price impact if an action is taken will be low.
 
@@ -756,7 +756,7 @@ However stakeholders should carefully evaluate alternative clients based on the 
   - Are they likely to remain committed to the project in the long run? What is their incentive in doing so?
   - Are there developers from Bitcoin Core who have moved over and are working on the alternative client?
 - Consensus:
-  - Does the alternative client implement a change that has consensus but for whatever reason the maintainers of Bitcoin Core did not merge it?
+  - Does the alternative client implement a change that has consensus, but for whatever reason the maintainers of Bitcoin Core did not merge it?
   - Why might the change not have been merged into Bitcoin Core?
   - How does the alternative client differ from Bitcoin Core and what are the implications for all stakeholders?
   - If the alternative client is credible, what might be the safest activation mechanism to adopt the consensus change?
@@ -799,7 +799,7 @@ When evaluating any proposed consensus change, stakeholders should consider the 
 
 ## Determining Consensus
 
-Assessing whether a proposed change has achieved consensus can be challenging due to bitcoin's decentralized nature. Consensus is not formalized through votes but is instead gauged by the absence of strong, sustained opposition and the overall sentiment in the community. Stakeholders can look to several indicators and resources:
+Assessing whether a proposed change has achieved consensus can be challenging due to bitcoin's decentralized nature. Consensus is not formalized through votes, but is instead gauged by the absence of strong, sustained opposition and the overall sentiment in the community. Stakeholders can look to several indicators and resources:
 
 1. Mailing List Discussions:
    1. Monitor the bitcoin-dev mailing list for technical discussions and debates.
@@ -855,7 +855,7 @@ To a long, healthy, prosperous bitcoin!
 [^9]: The ASIC chips are mining against a block template. That block template adheres to certain consensus rules valid for one fork.
 [^10]: https://stratumprotocol.org/docs/
 [^11]: https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining
-[^12]: When bitcoin was more nascent, Miners were likely more optimizing short term revenue, but as the industry has grown the duration of the revenue considered has likely lengthened due to increased capital expenditures and in some cases taking longer term debt to finance equipment.
+[^12]: When bitcoin was more nascent, Miners were likely more optimizing short-term revenue, but as the industry has grown the duration of the revenue considered has likely lengthened due to increased capital expenditures and in some cases taking longer term debt to finance equipment.
 [^13]: https://blog.bitmex.com/bitcoin-cores-competition/
 [^14]: https://blog.lopp.net/who-controls-bitcoin-core/
 [^15]: There is no barrier to becoming a Protocol Developer. Any person in the world can become a Protocol Developer given sufficient experience and ability. There is no application process or committee that approves this.
