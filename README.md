@@ -249,6 +249,8 @@ The current segmentation of Miners power is detailed below
 
 In the future, we may see a shift toward Miners running bitcoin software and directly controlling transaction selection and choosing consensus rules with protocols such as Stratum v2 and Braidpool.[^10] [^11]
 
+While historically Chip Manufactures have had close associations with Mining Pools and Large Scale Mining Operations, they are a unique subset of the Miner stakeholder group as they supply the mining hardware for all other Miner subsets. They exert control over firmware distributions and compatibility, which can impact the miners performance, choice of pool, pool features, and adoption of both mining protocol improvements (e.g. Stratum V2, Datum, Braidpool) as well as Bitcoin consensus changes (SegWit).
+
 Incentives:
 
 - Maximize their revenue from block rewards and transaction fees.[^12]
