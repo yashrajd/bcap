@@ -247,7 +247,7 @@ The current segmentation of Miners power is detailed below
 | Mining Pools                          | Yes                                         | Yes                                                            | Yes                      | No                                   |
 | Chip manufacturers                    | No                                          | No                                                             | No                       | No                                   |
 
-In the future, we may see a shift toward Miners running bitcoin software and directly controlling transaction selection and choosing consensus rules with protocols such as Stratum v2 and Braidpool.[^10] [^11]
+In the future, we may see a shift toward Miners running bitcoin software and directly controlling transaction selection and choosing consensus rules with protocols such as Stratum v2, DATUM, and Braidpool.[^10] [^11] Stratum V2 and DATUM are beginning to see production use. Both allow Individual Miners and Large Scale Miners to construct new block templates themselves, which could include flipped version bits signaling for a protocol change or censoring of specific transactions. It is important to note that both protocols still rely on a centralized Mining Pool, which can reject connections from Miners and, in the case of Stratum V2, reject Miner selected block templates.
 
 Incentives:
 
