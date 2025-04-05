@@ -848,36 +848,36 @@ Stakeholders should remain engaged, stay informed about ongoing discussions, and
 
 To a long, healthy, prosperous bitcoin!
 
-[^1]: https://blog.lopp.net/when-do-bitcoin-node-operators-upgrade/
-[^2]: https://github.com/bitcoin/bitcoin/blob/v0.6.0/src/main.cpp#L1281-L1283
-[^3]: https://bitcointalk.org/index.php?topic=63165.60
-[^4]: https://bitcoinmagazine.com/technical/bitcoin-changes-with-user-signaled-soft-forks
-[^5]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-April/020262.html
-[^6]: https://www.coinbase.com/legal/user_agreement/united_states
-[^7]: https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf
+[^1]: [https://blog.lopp.net/when-do-bitcoin-node-operators-upgrade/](https://blog.lopp.net/when-do-bitcoin-node-operators-upgrade/)
+[^2]: [https://github.com/bitcoin/bitcoin/blob/v0.6.0/src/main.cpp#L1281-L1283](https://github.com/bitcoin/bitcoin/blob/v0.6.0/src/main.cpp#L1281-L1283)
+[^3]: [https://bitcointalk.org/index.php?topic=63165.60](https://bitcointalk.org/index.php?topic=63165.60)
+[^4]: [https://bitcoinmagazine.com/technical/bitcoin-changes-with-user-signaled-soft-forks](https://bitcoinmagazine.com/technical/bitcoin-changes-with-user-signaled-soft-forks)
+[^5]: [https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-April/020262.html](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-April/020262.html)
+[^6]: [https://www.coinbase.com/legal/user_agreement/united_states](https://www.coinbase.com/legal/user_agreement/united_states)
+[^7]: [https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf](https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf)
 [^8]: There are examples where Media Influencers have been exiled or left the space in a scorched Earth manner
 [^9]: The ASIC chips are mining against a block template. That block template adheres to certain consensus rules valid for one fork.
-[^10]: https://stratumprotocol.org/docs/
-[^11]: https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining
+[^10]: [https://stratumprotocol.org/docs/](https://stratumprotocol.org/docs/)
+[^11]: [https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining](https://bitcoinmagazine.com/technical/braidpool-a-second-competitor-in-decentralizing-mining)
 [^12]: When bitcoin was more nascent, Miners were likely more optimizing short-term revenue, but as the industry has grown the duration of the revenue considered has likely lengthened due to increased capital expenditures and in some cases taking longer term debt to finance equipment.
-[^13]: https://blog.bitmex.com/bitcoin-cores-competition/
-[^14]: https://blog.lopp.net/who-controls-bitcoin-core/
+[^13]: [https://blog.bitmex.com/bitcoin-cores-competition/](https://blog.bitmex.com/bitcoin-cores-competition/)
+[^14]: [https://blog.lopp.net/who-controls-bitcoin-core/](https://blog.lopp.net/who-controls-bitcoin-core/)
 [^15]: There is no barrier to becoming a Protocol Developer. Any person in the world can become a Protocol Developer given sufficient experience and ability. There is no application process or committee that approves this.
 [^16]: Equity investors, such as venture capital firms, have their interests aligned with application developers because of their ownership stakes in bitcoin-related businesses
-[^17]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/013996.html
-[^18]: https://cointelegraph.com/news/how-greg-maxwell-exploited-bitcoin-unlimited-in-every-way-possible
-[^19]: https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77
-[^20]: https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77
-[^21]: https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77
-[^22]: https://glossary.bitbo.io/uasf/#did-uasf-work-in-activating-segwit
-[^23]: https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus
-[^24]: https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus
+[^17]: [https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/013996.html](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/013996.html)
+[^18]: [https://cointelegraph.com/news/how-greg-maxwell-exploited-bitcoin-unlimited-in-every-way-possible](https://cointelegraph.com/news/how-greg-maxwell-exploited-bitcoin-unlimited-in-every-way-possible)
+[^19]: [https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77](https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77)
+[^20]: [https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77](https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77)
+[^21]: [https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77](https://dcgco.medium.com/bitcoin-scaling-agreement-at-consensus-2017-133521fe9a77)
+[^22]: [https://glossary.bitbo.io/uasf/#did-uasf-work-in-activating-segwit](https://glossary.bitbo.io/uasf/#did-uasf-work-in-activating-segwit)
+[^23]: [https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus](https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus)
+[^24]: [https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus](https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus)
 [^25]: We expect this to change in the future when there are very popular utility applications which large user bases
-[^26]: https://en.bitcoin.it/wiki/Segwit_support
-[^27]: https://coin.dance/nodes
-[^28]: https://cointelegraph.com/news/bitcoin-network-node-count-sets-new-all-time-high
-[^29]: https://bitcoinmagazine.com/technical/the-long-history-and-disputed-desirability-of-alternative-bitcoin-implementations-1474637904
+[^26]: [https://en.bitcoin.it/wiki/Segwit_support](https://en.bitcoin.it/wiki/Segwit_support)
+[^27]: [https://coin.dance/nodes](https://coin.dance/nodes)
+[^28]: [https://cointelegraph.com/news/bitcoin-network-node-count-sets-new-all-time-high](https://cointelegraph.com/news/bitcoin-network-node-count-sets-new-all-time-high)
+[^29]: [https://bitcoinmagazine.com/technical/the-long-history-and-disputed-desirability-of-alternative-bitcoin-implementations-1474637904](https://bitcoinmagazine.com/technical/the-long-history-and-disputed-desirability-of-alternative-bitcoin-implementations-1474637904)
 [^30]: A business would have a really high bar for this given all the motivations against adopting an alternative client. The business would need to concretely answer “why is Bitcoin Core not adopting it?”
 [^31]: The disruption does not necessarily require high transaction fee transactions, it could be done out of band with private mining mempool products
-[^32]: https://x.com/giacomozucco/status/1826219048528396784
-[^33]: https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf
+[^32]: [https://x.com/giacomozucco/status/1826219048528396784](https://x.com/giacomozucco/status/1826219048528396784)
+[^33]: [https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf](https://www.blackrock.com/us/individual/resources/regulatory-documents/stream-document?stream=reg&product=IUS-IBIT-J&shareClass=NA&documentId=2212465%7E2224307%7E2275834%7E2249884&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-bitcoin-trust-12-31.pdf)
