@@ -872,7 +872,7 @@ To a long, healthy, prosperous bitcoin!
 [^22]: [https://glossary.bitbo.io/uasf/#did-uasf-work-in-activating-segwit](https://glossary.bitbo.io/uasf/#did-uasf-work-in-activating-segwit)
 [^23]: [https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus](https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus)
 [^24]: [https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus](https://bitcoinmagazine.com/culture/bitcoin-independence-day-how-this-watershed-day-defines-community-consensus)
-[^25]: We expect this to change in the future when there are very popular utility applications which large user bases
+[^25]: We expect this to change in the future when there are very popular utility applications with large user bases
 [^26]: [https://en.bitcoin.it/wiki/Segwit_support](https://en.bitcoin.it/wiki/Segwit_support)
 [^27]: [https://coin.dance/nodes](https://coin.dance/nodes)
 [^28]: [https://cointelegraph.com/news/bitcoin-network-node-count-sets-new-all-time-high](https://cointelegraph.com/news/bitcoin-network-node-count-sets-new-all-time-high)
