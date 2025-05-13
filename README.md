@@ -11,13 +11,13 @@ Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avi
 
 [Introduction](#Introduction)
 
-[What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)/
-L [Technical Aspects of Consensus](#Technical-Aspects-of-Consensus)/
-L [How are changes activated](#How-are-changes-activated)/
-[What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)/
-L [State of Mind](#State-of-Mind)/
-L [Stakeholders](#Stakeholders)/
-L [Consensus Game Theory](#Consensus-Game-Theory)/
+[What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)\
+L [Technical Aspects of Consensus](#Technical-Aspects-of-Consensus)\
+L [How are changes activated](#How-are-changes-activated)\
+[What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)\
+L [State of Mind](#State-of-Mind)\
+L [Stakeholders](#Stakeholders)\
+L [Consensus Game Theory](#Consensus-Game-Theory)\
 [Recommendations](#Recommendations)
 
 # Introduction
