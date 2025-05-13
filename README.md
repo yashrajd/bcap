@@ -11,6 +11,8 @@ Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avi
 
 [Introduction](#Introduction)
 [What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)
+[What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)
+[Recommendations](#Recommendations)
 
 # Introduction
 
