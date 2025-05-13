@@ -335,13 +335,13 @@ Utility Users and Application Developers Incentives:
 - High tolerance for risk: Early developers and adopters of decentralized applications tend to select for those with more risk tolerance.
 - Benefits from more programmability: The more programmability is allowed, the more complex the types of applications can be built and potentially the more utility can be provided to users.
 
-# Consensus Game Theory
+## Consensus Game Theory
 
-## How is Consensus Change attained
+### How is Consensus Change attained
 
 Bitcoin consensus change is not achieved through formal governance, but through a complex interplay of actions and reactions among stakeholders, each with their unique powers and incentives. The process is iterative, with various stakeholders taking turns to act and respond until consensus is reached. Historical upgrades, such as segwit, illustrate this repeated game theory dynamic, where stakeholders must continuously adjust their strategies and actions based on the actions of others. The process iterates to a point where everyone is sufficiently satisfied with the chosen upgrades such that they no longer have reasonable objections.
 
-### Segwit
+#### Segwit
 
 The consensus around the segwit upgrade was achieved through an extended, iterative process involving multiple stakeholder groups:
 
@@ -367,7 +367,7 @@ The process of reaching consensus for segwit might have started with some stakeh
 
 ![segwit_heatmap](img/segwit_heatmap.png)
 
-## Stakeholder powers during a consensus change
+### Stakeholder powers during a consensus change
 
 Stakeholders have varying degrees of relative powers during the course of a consensus change based on their attributes. Some stakeholders' influence is limited in the early part of the consensus-building process, but grows over time; the opposite is true for other stakeholder groups. We have tried to qualitatively capture the time-dependent variance in the unique influence of each stakeholder group at a high level in the following graphic.
 
