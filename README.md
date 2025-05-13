@@ -10,6 +10,7 @@ Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avi
 # Table of contents
 
 [Introduction](#Introduction)
+[What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)
 
 # Introduction
 
