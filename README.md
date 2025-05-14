@@ -9,31 +9,28 @@ Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avi
 
 # Table of contents
 
-[Introduction](#Introduction)
-
-[What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)
-- [Technical Aspects of Consensus](#Technical-Aspects-of-Consensus)
-- [How are changes activated](#How-are-changes-activated)
-    - [Soft Forks vs Hard Forks](#Soft-Forks-vs-Hard-Forks)
-    - [Historical Activation Mechanisms](#Historical-Activation-Mechanisms)
-
-[What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)
-- [State of Mind](#State-of-Mind)
-- [Stakeholders](#Stakeholders)
-	- [Economic Nodes](#Economic-Nodes)
-	- [Investors](#Investors)
-	- [Media Influencers](#Media-Influencers)
-	- [Miners](#Miners)
-	- [Protocol Developers](#Protocol-Developers)
-	- [Users and Application Developers](#Users-and-Application-Developers)
-- [Consensus Game Theory](#Consensus-Game-Theory)
-- [How to measure Consensus](#How-to-measure-Consensus)
-- [Future Scenarios and Considerations](#Future-Scenarios-and-Considerations)
-
-[Recommendations](#Recommendations)
-- [Proposals Maturing Toward Possible Consensus](#Proposals-Maturing-Toward-Possible-Consensus)
-- [Key Questions for Stakeholders](#Key-Questions-for-Stakeholders)
-- [Determining Consensus](#Determining-Consensus)
+- [Introduction](#Introduction)
+- [What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)
+	- [Technical Aspects of Consensus](#Technical-Aspects-of-Consensus)
+	- [How are changes activated](#How-are-changes-activated)
+    	- [Soft Forks vs Hard Forks](#Soft-Forks-vs-Hard-Forks)
+    	- [Historical Activation Mechanisms](#Historical-Activation-Mechanisms)
+- [What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)
+	- [State of Mind](#State-of-Mind)
+	- [Stakeholders](#Stakeholders)
+		- [Economic Nodes](#Economic-Nodes)
+		- [Investors](#Investors)
+		- [Media Influencers](#Media-Influencers)
+		- [Miners](#Miners)
+		- [Protocol Developers](#Protocol-Developers)
+		- [Users and Application Developers](#Users-and-Application-Developers)
+	- [Consensus Game Theory](#Consensus-Game-Theory)
+	- [How to measure Consensus](#How-to-measure-Consensus)
+	- [Future Scenarios and Considerations](#Future-Scenarios-and-Considerations)
+- [Recommendations](#Recommendations)
+	- [Proposals Maturing Toward Possible Consensus](#Proposals-Maturing-Toward-Possible-Consensus)
+	- [Key Questions for Stakeholders](#Key-Questions-for-Stakeholders)
+	- [Determining Consensus](#Determining-Consensus)
 
 # Introduction
 
