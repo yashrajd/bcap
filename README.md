@@ -66,7 +66,7 @@ BIP34 introduced an upgrade path for versioned transactions and blocks. Miners w
 
 BIP9 followed BIP34 and introduced the ability for Miners to signal readiness for multiple upgrades with version bits in the block header. Similar to BIP34, upgrades on the network would only lock in and activate if a certain hashrate threshold is reached before nodes begin enforcing the new rules, often with a long grace period that allows nodes on the network to upgrade. If the threshold was not reached, then the activation would not occur.
 
-The key difference between IsSuperMajority (BIP34) and Version Bits (BIP9) is that ISM would invalidate previous version blocks past the 95% threshold. This essentially guaranteed to fork-off the last 5% of the miners to upgrade. This was fixed with BIP9 by not requiring miner signaling past a certain threshold
+The key difference between IsSuperMajority (BIP34) and Version Bits (BIP9) is that ISM would invalidate previous version blocks past the 95% threshold. This essentially guaranteed to fork-off the last 5% of the miners to upgrade. This was fixed with BIP9 by removing the requirement for miner signaling past a certain threshold.
 
 CheckSequenceVerify (BIP68, BIP112, BIP113) was activated successfully with version bits signaling at a 95% threshold with a 2 week grace period after the hashrate threshold was reached for nodes on the network to upgrade.
 
