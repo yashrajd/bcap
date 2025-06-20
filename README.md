@@ -86,11 +86,13 @@ Risks and Considerations:
 
 Early proposals such as BIP16 Pay to Script Hash (P2SH) used a predetermined Flag Day to activate on the network.[^2] P2SH was activated on April 1, 2012 at block 173,805. Following the activation there were reports that some Miners who failed to update from 0.6.0 rc1 were stuck at block 170,060.[^3]
 
-#### BIP34 and BIP9
+#### IsSuperMajority (BIP34) and Version Bits (BIP9)
 
 BIP34 introduced an upgrade path for versioned transactions and blocks. Miners would increment their version number in the block header to activate the upgrade. Once 75% of the last 1000 blocks had the upgraded version 2 number, invalid version 2 blocks were rejected. Once 95% of the last 1000 blocks were version 2 or greater, all version 1 blocks would be rejected. This mechanism would allow the network to more gradually upgrade. CheckLockTimeVerify (BIP65) and Strict DER Signatures (BIP66) were successfully activated with BIP34. The activations with BIP34 at the time had short grace periods for nodes on the network to upgrade.
 
 BIP9 followed BIP34 and introduced the ability for Miners to signal readiness for multiple upgrades with version bits in the block header. Similar to BIP34, upgrades on the network would only lock in and activate if a certain hashrate threshold is reached before nodes begin enforcing the new rules, often with a long grace period that allows nodes on the network to upgrade. If the threshold was not reached, then the activation would not occur.
+
+The key difference between IsSuperMajority (BIP34) and Version Bits (BIP9) is that ISM would invalidate previous version blocks past the 95% threshold. This essentially guaranteed to fork-off the last 5% of the miners to upgrade. This was fixed with BIP9 by removing the requirement for miner signaling past a certain threshold.
 
 CheckSequenceVerify (BIP68, BIP112, BIP113) was activated successfully with version bits signaling at a 95% threshold with a 2 week grace period after the hashrate threshold was reached for nodes on the network to upgrade.
 
