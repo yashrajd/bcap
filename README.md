@@ -6,6 +6,35 @@ Thank you to the following people who reviewed drafts of the initial project, pr
 
 Mat Balez, Jay Beddict, Jeff Booth, Joe Carlasare, Hong Fang, David Harding, Avichal Garg, Gwart, Chaitanya Jain, Shirish Jajodia, Hong Kim, David King, Jameson Lopp, Shehzan Maredia, Sanjay Mavinkurve, Murch, Matt Odell, John Pfeffer, Reardencode, Bradley Rettler, Rijndael, Pierre Rochard, AJ Towns, 0xkrane, jesmros
 
+# Table of contents
+
+- [Introduction](#Introduction)
+- [What is Bitcoin Consensus](#What-is-Bitcoin-Consensus)
+	- [Technical Aspects of Consensus](#Technical-Aspects-of-Consensus)
+	- [How are changes activated](#How-are-changes-activated)
+    	- [Soft Forks vs Hard Forks](#Soft-Forks-vs-Hard-Forks)
+    	- [Historical Activation Mechanisms](#Historical-Activation-Mechanisms)
+- [What maintains Bitcoin Consensus](#What-maintains-Bitcoin-Consensus)
+	- [State of Mind](#State-of-Mind)
+	- [Stakeholders](#Stakeholders)
+		- [Economic Nodes](#Economic-Nodes)
+		- [Investors](#Investors)
+		- [Media Influencers](#Media-Influencers)
+		- [Miners](#Miners)
+		- [Protocol Developers](#Protocol-Developers)
+		- [Users and Application Developers](#Users-and-Application-Developers)
+	- [Consensus Game Theory](#Consensus-Game-Theory)
+		- [How is Consensus Change attained](#How-is-Consensus-Change-attained)
+		- [Stakeholder powers during a consensus change](#Stakeholder-powers-during-a-consensus-change)
+	- [How to measure Consensus](#How-to-measure-Consensus)
+	- [Future Scenarios and Considerations](#Future-Scenarios-and-Considerations)
+		- [Consensus changes with alternative clients](#Consensus-changes-with-alternative-clients)
+		- [What is a chain split](#What-is-a-chain-split)
+- [Recommendations](#Recommendations)
+	- [Proposals Maturing Toward Possible Consensus](#Proposals-Maturing-Toward-Possible-Consensus)
+	- [Key Questions for Stakeholders](#Key-Questions-for-Stakeholders)
+	- [Determining Consensus](#Determining-Consensus)
+
 # Introduction
 
 This paper provides an analysis of bitcoin’s consensus mechanism, focusing on the roles of various stakeholders, their powers, and the incentives that guide their actions. Bitcoin is incredibly difficult to change by design. The default is no change. Any significant change needs to pass that hurdle. We categorize the roles people play in bitcoin's consensus into [six distinct stakeholder groups](#stakeholders), each with their own motivations and influence. We also notice that the relative powers of the stakeholders shift depending on their role in the network’s operation and the stage of the consensus change process. Notably, while [Bitcoin Core maintainers](#protocol-developers) do not have excessive power to change Bitcoin, they possess significant power to veto changes. We also introduce the concept of [State of Mind](#state-of-mind), which affects the degree that stakeholders engage in the process of finding consensus.
@@ -326,13 +355,13 @@ Utility Users and Application Developers Incentives:
 - High tolerance for risk: Early developers and adopters of decentralized applications tend to select for those with more risk tolerance.
 - Benefits from more programmability: The more programmability is allowed, the more complex the types of applications can be built and potentially the more utility can be provided to users.
 
-# Consensus Game Theory
+## Consensus Game Theory
 
-## How is Consensus Change attained
+### How is Consensus Change attained
 
 Bitcoin consensus change is not achieved through formal governance, but through a complex interplay of actions and reactions among stakeholders, each with their unique powers and incentives. The process is iterative, with various stakeholders taking turns to act and respond until consensus is reached. Historical upgrades, such as segwit, illustrate this repeated game theory dynamic, where stakeholders must continuously adjust their strategies and actions based on the actions of others. The process iterates to a point where everyone is sufficiently satisfied with the chosen upgrades such that they no longer have reasonable objections.
 
-### Segwit
+#### Segwit
 
 The consensus around the segwit upgrade was achieved through an extended, iterative process involving multiple stakeholder groups:
 
@@ -358,7 +387,7 @@ The process of reaching consensus for segwit might have started with some stakeh
 
 ![segwit_heatmap](img/segwit_heatmap.png)
 
-## Stakeholder powers during a consensus change
+### Stakeholder powers during a consensus change
 
 Stakeholders have varying degrees of relative powers during the course of a consensus change based on their attributes. Some stakeholders' influence is limited in the early part of the consensus-building process, but grows over time; the opposite is true for other stakeholder groups. We have tried to qualitatively capture the time-dependent variance in the unique influence of each stakeholder group at a high level in the following graphic.
 
