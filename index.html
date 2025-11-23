@@ -686,7 +686,17 @@
                 // Process footnote references before marked.js parsing
                 // Replace [^1] with custom HTML that includes tooltip
                 let processedText = text;
-                
+
+                // Store the original footnote definitions for the appendix
+                const footnoteDefinitions = [];
+                const footnoteDefPattern = /^\[(\^[^\]]+)\]:\s*(.+)$/gm;
+                let defMatch;
+                while ((defMatch = footnoteDefPattern.exec(text)) !== null) {
+                    const num = defMatch[1].substring(1); // Remove ^ for numbering
+                    const content = defMatch[2].trim();
+                    footnoteDefinitions.push({ num, content });
+                }
+
                 // First, remove the footnote definitions from the bottom of the text
                 // so they don't appear in the rendered content
                 processedText = processedText.replace(/^\[\^[^\]]+\]:\s*.+$/gm, '');
@@ -757,9 +767,50 @@
                 
                 // Display the content
                 document.getElementById('content').innerHTML = html;
-                
+
                 // Fix header IDs to match the internal links
                 fixHeaderIds();
+
+                // Add formatted footnotes to the Appendix section if they exist
+                if (footnoteDefinitions.length > 0) {
+                    const appendixHeader = Array.from(document.querySelectorAll('h1, h2')).find(
+                        h => h.textContent.trim() === 'Appendix'
+                    );
+
+                    if (appendixHeader) {
+                        // Create an ordered list for footnotes
+                        const footnoteList = document.createElement('ol');
+                        footnoteList.style.paddingLeft = '20px';
+                        footnoteList.style.lineHeight = '1.8';
+
+                        // Sort footnotes by number
+                        footnoteDefinitions.sort((a, b) => parseInt(a.num) - parseInt(b.num));
+
+                        footnoteDefinitions.forEach(fn => {
+                            const li = document.createElement('li');
+                            li.style.marginBottom = '8px';
+
+                            // Check if content is a URL or markdown link
+                            let formattedContent = fn.content;
+
+                            // Handle markdown links [text](url)
+                            const markdownLinkMatch = formattedContent.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+                            if (markdownLinkMatch) {
+                                const linkUrl = markdownLinkMatch[2];
+                                formattedContent = `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer">${linkUrl}</a>`;
+                            } else if (formattedContent.match(/^https?:\/\//)) {
+                                // Plain URLs
+                                formattedContent = `<a href="${formattedContent}" target="_blank" rel="noopener noreferrer">${formattedContent}</a>`;
+                            }
+
+                            li.innerHTML = formattedContent;
+                            footnoteList.appendChild(li);
+                        });
+
+                        // Insert the list after the Appendix header
+                        appendixHeader.parentNode.insertBefore(footnoteList, appendixHeader.nextSibling);
+                    }
+                }
                 
                 // Replace footnote placeholders with actual content
                 if (window.footnoteContent) {
